@@ -7,7 +7,8 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "run_at": "document_start"
     }
   ],
   "browser_action": {
@@ -21,7 +22,8 @@
         "tabs",
         "notifications",
         "http://*/",
-        "https://*/"
+        "https://*/",
+        "storage"
     ],
   "web_accessible_resources": [
      "webgazer.js",
