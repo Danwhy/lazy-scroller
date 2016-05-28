@@ -7,6 +7,8 @@ function addScript(file) {
 
     if (nextFile) {
       addScript(scripts[scripts.indexOf(file) + 1]);
+    } else {
+      return;
     }
   }
 
